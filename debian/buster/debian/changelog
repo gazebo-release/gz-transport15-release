@@ -1,3 +1,9 @@
+ignition-transport11 (11.0.0~pre1-1~buster) buster; urgency=medium
+
+  * ignition-transport11 11.0.0~pre1-1 release
+
+ -- Carlos Aguero <caguero@openrobotics.org>  Wed, 15 Sep 2021 23:48:20 +0200
+
 ignition-transport11 (10.999.999-1~buster) buster; urgency=medium
 
   * Stub to be removed after first entry
