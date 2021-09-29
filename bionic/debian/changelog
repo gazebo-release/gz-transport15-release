@@ -1,3 +1,9 @@
+ignition-transport11 (11.0.0-1~bionic) bionic; urgency=medium
+
+  * ignition-transport11 11.0.0-1 release
+
+ -- Carlos Aguero <caguero@openrobotics.org>  Wed, 29 Sep 2021 14:14:44 +0200
+
 ignition-transport11 (11.0.0~pre1-2~bionic) bionic; urgency=medium
 
   * ignition-transport11 11.0.0~pre1-2 release
