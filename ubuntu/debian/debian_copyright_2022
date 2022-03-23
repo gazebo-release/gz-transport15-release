@@ -2,7 +2,6 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: ignition-transport
 Upstream-Contact: https://github.com/ignitionrobotics/ign-transport/issues
 Source: https://github.com/ignitionrobotics/ign-transport
-Files-Excluded: test/gtest
 
 Files: *
 Copyright: 2014-2021, Open Source Robotics Foundation

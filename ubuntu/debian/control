@@ -1,7 +1,7 @@
 Source: ignition-transport12
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
-Priority: extra
+Priority: optional
 Build-Depends: cmake,
                pkg-config,
                debhelper (>= 11),
@@ -129,7 +129,7 @@ Description: Ignition Robotics transport Library - Metapackage
 Package: libignition-transport12-dbg
 Architecture: any
 Section: debug
-Priority: extra
+Priority: optional
 Depends:
      libignition-transport12 (= ${binary:Version}),
      ${misc:Depends}

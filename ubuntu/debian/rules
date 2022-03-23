@@ -1,7 +1,5 @@
 #!/usr/bin/make -f
 
-DEB_HOST_ARCH := $(shell dpkg-architecture -qDEB_HOST_ARCH)
-
 ifeq ($(DEB_HOST_ARCH),$(filter $(DEB_HOST_ARCH),amd64 i386))
   CMAKE_HOST_CFLAGS="True"
 else
