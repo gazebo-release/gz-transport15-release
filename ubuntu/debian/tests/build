@@ -1,5 +1,5 @@
 #!/bin/sh
-# autopkgtest check: Build and run a program against ign-transport, to verify that the
+# autopkgtest check: Build and run a program against gz-transport, to verify that the
 # headers and pkg-config file are installed correctly
 # (C) 2012 Jose Luis Rivero
 # Author: Jose Luis Rivero <jrivero@osrfoundation.org>
@@ -9,7 +9,7 @@ set -e
 WORKDIR=$(mktemp -d)
 trap "rm -rf $WORKDIR" 0 INT QUIT ABRT PIPE TERM
 cd $WORKDIR
-cat <<EOF > igntest.cc
+cat <<EOF > gztest.cc
 #include <gz/transport.hh>
 
 int main()
@@ -20,28 +20,28 @@ int main()
 }
 EOF
 
-g++ -o igntest igntest.cc `pkg-config --cflags --libs ignition-transport12`
+g++ -o gztest gztest.cc `pkg-config --cflags --libs gz-transport12`
 echo "build: OK"
-[ -x igntest ]
-./igntest
+[ -x gztest ]
+./gztest
 echo "run: OK"
 
 cat <<EOF > CMakeLists.txt
 cmake_minimum_required(VERSION 3.5)
 
-project(ign_test VERSION 1.0.0)
+project(gz_test VERSION 1.0.0)
 
-find_package(ignition-transport12 12.0.0 REQUIRED)
-add_executable(igntest igntest.cc)
-target_link_libraries(igntest
+find_package(gz-transport12 12.0.0 REQUIRED)
+add_executable(gztest gztest.cc)
+target_link_libraries(gztest
    PUBLIC
-      ignition-transport12::ignition-transport12)
+      gz-transport12::gz-transport12)
 EOF
 
 cmake .
 echo "configure cmake with component: OK"
 make
 echo "build cmake component:OK"
-[ -x igntest ]
-./igntest
+[ -x gztest ]
+./gztest
 echo "run: OK"
