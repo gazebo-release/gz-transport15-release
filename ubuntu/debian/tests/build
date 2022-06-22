@@ -20,7 +20,7 @@ int main()
 }
 EOF
 
-g++ -o gztest gztest.cc `pkg-config --cflags --libs gz-transport12`
+g++ -o gztest gztest.cc `pkg-config --cflags --libs ignition-transport12`
 echo "build: OK"
 [ -x gztest ]
 ./gztest
