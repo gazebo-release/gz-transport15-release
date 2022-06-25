@@ -19,10 +19,10 @@ Build-Depends: cmake,
                uuid-dev,
                libzmq3-dev (>= 3.0.0),
                libsqlite3-dev
-Vcs-Browser: https://github.com/ignitionrobotics/ignition-transport
-Vcs-Git: https://github.org/ignition-release/ign-transport12-release
+Vcs-Browser: https://github.com/gazebosim/gz-transport
+Vcs-Git: https://github.org/gazebo-release/gz-transport12-release
 Standards-Version: 4.5.1
-Homepage: https://github.com/ignition-release/ign-transport
+Homepage: https://github.com/gazebo-release/gz-transport
 
 Package: libignition-transport12-core-dev
 Architecture: any
@@ -38,17 +38,17 @@ Depends: libignition-transport12 (= ${binary:Version}),
          ${shlibs:Depends},
          ${misc:Depends}
 Multi-Arch: same
-Description: Ignition Robotics transport Library - Core Dev files
- Ignition transport library combines ZeroMQ with Protobufs to create a fast and
+Description: Gazebo transport Library - Core Dev files
+ Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
  efficient message passing system. Asynchronous message publication and
  subscription is provided along with service calls and discovery.
  .
- Ignition Robotics is a set of simple libraries that provide useful
+ Gazebo is a set of simple libraries that provide useful
  functionality to bootstrap robot applications. The included libraries
  encapsulate all the essentials, such as common math data types, console
  logging, 3D mesh management, and asynchronous message passing.
  .
- The package ships the ignition transport core development files
+ The package ships the Gazebo transport core development files
 
 
 Package: libignition-transport12
@@ -57,17 +57,17 @@ Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Multi-Arch: same
-Description: Ignition Robotics Transport Library - Shared library
- Ignition transport library combines ZeroMQ with Protobufs to create a fast and
+Description: Gazebo Transport Library - Shared library
+ Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
  efficient message passing system. Asynchronous message publication and
  subscription is provided along with service calls and discovery.
  .
- Ignition Robotics is a set of simple libraries that provide useful
+ Gazebo is a set of simple libraries that provide useful
  functionality to bootstrap robot applications. The included libraries
  encapsulate all the essentials, such as common math data types, console
  logging, 3D mesh management, and asynchronous message passing.
  .
- The package ships the ignition transport libraries
+ The package ships the Gazebo transport libraries
 
 Package: libignition-transport12-log-dev
 Architecture: any
@@ -78,17 +78,17 @@ Depends: libsqlite3-dev,
          libignition-transport12-log (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
-Description: Ignition Robotics transport Library - Core Dev
- Ignition transport library combines ZeroMQ with Protobufs to create a fast and
+Description: Gazebo transport Library - Core Dev
+ Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
  efficient message passing system. Asynchronous message publication and
  subscription is provided along with service calls and discovery.
  .
- Ignition Robotics is a set of simple libraries that provide useful
+ Gazebo is a set of simple libraries that provide useful
  functionality to bootstrap robot applications. The included libraries
  encapsulate all the essentials, such as common math data types, console
  logging, 3D mesh management, and asynchronous message passing.
  .
- The package ships the ignition core development libraries
+ The package ships the Gazebo core development libraries
 
 Package: libignition-transport12-log
 Architecture: any
@@ -96,12 +96,12 @@ Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Multi-Arch: same
-Description: Ignition Robotics Transport Library - Log Shared library
- Ignition transport library combines ZeroMQ with Protobufs to create a fast and
+Description: Gazebo Transport Library - Log Shared library
+ Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
  efficient message passing system. Asynchronous message publication and
  subscription is provided along with service calls and discovery.
  .
- Ignition Robotics is a set of simple libraries that provide useful
+ Gazebo is a set of simple libraries that provide useful
  functionality to bootstrap robot applications. The included libraries
  encapsulate all the essentials, such as common math data types, console
  logging, 3D mesh management, and asynchronous message passing.
@@ -115,12 +115,12 @@ Depends: libignition-transport12-core-dev (= ${binary:Version}),
          libignition-transport12-log-dev (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
-Description: Ignition Robotics transport Library - Metapackage
- Ignition transport library combines ZeroMQ with Protobufs to create a fast and
+Description: Gazebo transport Library - Metapackage
+ Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
  efficient message passing system. Asynchronous message publication and
  subscription is provided along with service calls and discovery.
  .
- Ignition Robotics is a set of simple libraries that provide useful
+ Gazebo is a set of simple libraries that provide useful
  functionality to bootstrap robot applications. The included libraries
  encapsulate all the essentials, such as common math data types, console
  logging, 3D mesh management, and asynchronous message passing.
@@ -135,12 +135,12 @@ Depends:
      libignition-transport12 (= ${binary:Version}),
      ${misc:Depends}
 Multi-Arch: same
-Description: Ignition Robotics transport Library - Debugging symbols
- Ignition transport library combines ZeroMQ with Protobufs to create a fast and
+Description: Gazebo transport Library - Debugging symbols
+ Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
  efficient message passing system. Asynchronous message publication and
  subscription is provided along with service calls and discovery.
  .
- Ignition Robotics is a set of simple libraries that provide useful
+ Gazebo is a set of simple libraries that provide useful
  functionality to bootstrap robot applications. The included libraries
  encapsulate all the essentials, such as common math data types, console
  logging, 3D mesh management, and asynchronous message passing.
