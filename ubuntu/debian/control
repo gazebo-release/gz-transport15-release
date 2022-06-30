@@ -1,4 +1,4 @@
-Source: ignition-transport12
+Source: gz-transport12
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
 Priority: optional
@@ -10,11 +10,11 @@ Build-Depends: cmake,
                ruby-ronn,
                libprotoc-dev,
                libprotobuf-dev,
-               libignition-msgs9-dev,
-               libignition-cmake3-dev,
-               libignition-tools2-dev,
-               libignition-utils2-cli-dev,
-               libignition-utils2-dev,
+               libgz-msgs9-dev,
+               libgz-cmake3-dev,
+               libgz-tools2-dev,
+               libgz-utils2-cli-dev,
+               libgz-utils2-dev,
                protobuf-compiler,
                uuid-dev,
                libzmq3-dev (>= 3.0.0),
@@ -24,19 +24,21 @@ Vcs-Git: https://github.org/gazebo-release/gz-transport12-release
 Standards-Version: 4.5.1
 Homepage: https://github.com/gazebo-release/gz-transport
 
-Package: libignition-transport12-core-dev
+Package: libgz-transport12-core-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-transport12 (= ${binary:Version}),
+Depends: libgz-transport12 (= ${binary:Version}),
          uuid-dev,
          libzmq3-dev (>= 3.0.0),
-         libignition-msgs9-dev,
-         libignition-cmake3-dev,
-         libignition-tools2-dev,
-         libignition-utils2-cli-dev,
-         libignition-utils2-dev,
+         libgz-msgs9-dev,
+         libgz-cmake3-dev,
+         libgz-tools2-dev,
+         libgz-utils2-cli-dev,
+         libgz-utils2-dev,
          ${shlibs:Depends},
          ${misc:Depends}
+Breaks: libignition-transport12-core-dev (<< 11.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
+Replaces: libignition-transport12-core-dev (<< 11.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
 Multi-Arch: same
 Description: Gazebo transport Library - Core Dev files
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
@@ -51,11 +53,13 @@ Description: Gazebo transport Library - Core Dev files
  The package ships the Gazebo transport core development files
 
 
-Package: libignition-transport12
+Package: libgz-transport12
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Breaks: libignition-transport12 (<< 11.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
+Replaces: libignition-transport12 (<< 11.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
 Multi-Arch: same
 Description: Gazebo Transport Library - Shared library
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
@@ -69,14 +73,16 @@ Description: Gazebo Transport Library - Shared library
  .
  The package ships the Gazebo transport libraries
 
-Package: libignition-transport12-log-dev
+Package: libgz-transport12-log-dev
 Architecture: any
 Section: libdevel
 Depends: libsqlite3-dev,
-         libignition-cmake3-dev,
-         libignition-transport12-core-dev (= ${binary:Version}),
-         libignition-transport12-log (= ${binary:Version}),
+         libgz-cmake3-dev,
+         libgz-transport12-core-dev (= ${binary:Version}),
+         libgz-transport12-log (= ${binary:Version}),
          ${misc:Depends}
+Breaks: libignition-transport12-log-dev (<< 11.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
+Replaces: libignition-transport12-log-dev (<< 11.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
 Multi-Arch: same
 Description: Gazebo transport Library - Core Dev
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
@@ -90,11 +96,13 @@ Description: Gazebo transport Library - Core Dev
  .
  The package ships the Gazebo core development libraries
 
-Package: libignition-transport12-log
+Package: libgz-transport12-log
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Breaks: libignition-transport12-log (<< 11.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
+Replaces: libignition-transport12-log (<< 11.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
 Multi-Arch: same
 Description: Gazebo Transport Library - Log Shared library
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
@@ -108,12 +116,14 @@ Description: Gazebo Transport Library - Log Shared library
  .
  The package ships the log shared library
 
-Package: libignition-transport12-dev
+Package: libgz-transport12-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-transport12-core-dev (= ${binary:Version}),
-         libignition-transport12-log-dev (= ${binary:Version}),
+Depends: libgz-transport12-core-dev (= ${binary:Version}),
+         libgz-transport12-log-dev (= ${binary:Version}),
          ${misc:Depends}
+Breaks: libignition-transport12-dev (<< 11.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
+Replaces: libignition-transport12-dev (<< 11.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
 Multi-Arch: same
 Description: Gazebo transport Library - Metapackage
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
@@ -127,13 +137,15 @@ Description: Gazebo transport Library - Metapackage
  .
  The is a metapackage for all development files
 
-Package: libignition-transport12-dbg
+Package: libgz-transport12-dbg
 Architecture: any
 Section: debug
 Priority: optional
 Depends:
-     libignition-transport12 (= ${binary:Version}),
+     libgz-transport12 (= ${binary:Version}),
      ${misc:Depends}
+Breaks: libignition-transport12-dbg (<< 11.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
+Replaces: libignition-transport12-dbg (<< 11.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
 Multi-Arch: same
 Description: Gazebo transport Library - Debugging symbols
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
@@ -146,3 +158,51 @@ Description: Gazebo transport Library - Debugging symbols
  logging, 3D mesh management, and asynchronous message passing.
  .
  The package ships the debugging symbols
+
+Package: libignition-transport12-core-dev
+Depends: libgz-transport12-core-dev, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-transport12
+Depends: libgz-transport12, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-transport12-log-dev
+Depends: libgz-transport12-log-dev, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-transport12-log
+Depends: libgz-transport12-log, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-transport12-dev
+Depends: libgz-transport12-dev, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-transport12-dbg
+Depends: libgz-transport12-dbg, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.

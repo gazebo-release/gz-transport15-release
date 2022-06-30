@@ -22,8 +22,8 @@ override_dh_auto_configure:
 override_dh_install:
 	dh_install --
 	# need to remove files present in components
-	$(RM) debian/libignition-transport*-core-dev/usr/include/ignition/transport*/ignition/transport/log.hh
-	$(RM) debian/libignition-transport*-core-dev/usr/include/ignition/transport*/gz/transport/log.hh
+	$(RM) debian/libgz-transport*-core-dev/usr/include/ignition/transport*/ignition/transport/log.hh
+	$(RM) debian/libgz-transport*-core-dev/usr/include/ignition/transport*/gz/transport/log.hh
 	dh_missing --list-missing
 
 override_dh_auto_test:
@@ -31,4 +31,4 @@ override_dh_auto_test:
 	true
 
 override_dh_strip:
-	dh_strip -a --dbg-package=libignition-transport12-dbg
+	dh_strip -a --dbg-package=libgz-transport12-dbg
