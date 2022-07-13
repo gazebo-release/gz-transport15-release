@@ -5,4 +5,4 @@ usr/lib/*/lib*-transport[0-9][0-9]-log.so
 usr/lib/*/pkgconfig/*-transport[0-9][0-9]-log.pc
 usr/lib/ruby/*/cmdlog[0-9][0-9].rb
 usr/share/*/transportlog[0-9][0-9].yaml
-usr/share/ignition/*-transport[0-9][0-9]/sql/*
+usr/share/gz/*-transport[0-9][0-9]/sql/*

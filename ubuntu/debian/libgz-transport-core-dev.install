@@ -8,4 +8,4 @@ usr/lib/*/cmake/*-transport[0-9][0-9]/*-transport*
 usr/lib/*/*/transport[0-9][0-9]/*
 usr/lib/ruby/*/cmdtransport[0-9][0-9].rb
 usr/share/*/transport[0-9][0-9].yaml
-usr/share/ignition/*-transport*/*-transport[0-9][0-9].tag.xml
+usr/share/gz/*-transport*/*-transport[0-9][0-9].tag.xml
