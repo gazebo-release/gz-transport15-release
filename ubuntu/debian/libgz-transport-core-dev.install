@@ -5,6 +5,4 @@ usr/include/*/transport[0-9][0-9]/*/transport/detail/*.hh
 usr/lib/*/lib*-transport[0-9][0-9].so
 usr/lib/*/pkgconfig/*-transport[0-9][0-9].pc
 usr/lib/*/cmake/*-transport[0-9][0-9]/*-transport*
-usr/lib/ruby/*/cmdtransport[0-9][0-9].rb
-usr/share/*/transport[0-9][0-9].yaml
 usr/share/gz/*-transport*/*-transport[0-9][0-9].tag.xml
