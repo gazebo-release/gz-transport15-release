@@ -1,3 +1,9 @@
+gz-transport12 (12.0.0~pre1-2~jammy) jammy; urgency=medium
+
+  * gz-transport12 12.0.0~pre1-2 release
+
+ -- Louise Poubel <louise@openrobotics.org>  Fri, 02 Sep 2022 17:42:34 -0700
+
 gz-transport12 (12.0.0~pre1-1~jammy) jammy; urgency=medium
 
   * gz-transport12 12.0.0~pre1-1 release
