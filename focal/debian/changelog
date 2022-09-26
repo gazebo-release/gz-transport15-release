@@ -1,3 +1,9 @@
+gz-transport12 (12.0.0-1~focal) focal; urgency=medium
+
+  * gz-transport12 12.0.0-1 release
+
+ -- Nate Koenig <nate@openrobotics.org>  Mon, 26 Sep 2022 02:20:04 -0700
+
 gz-transport12 (12.0.0~pre1-2~focal) focal; urgency=medium
 
   * gz-transport12 12.0.0~pre1-2 release
