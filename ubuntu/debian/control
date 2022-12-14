@@ -135,11 +135,54 @@ Description: Gazebo Transport Library - Log Shared library
  .
  The package ships the log shared library
 
+Package: libgz-transport12-parameters-dev
+Architecture: any
+Section: libdevel
+Depends: libgz-cmake3-dev,
+         libgz-transport12-core-dev (= ${binary:Version}),
+         libgz-transport12-parameters (= ${binary:Version}),
+         ${misc:Depends}
+Breaks: libignition-transport12-parameters-dev (<< 11.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
+Replaces: libignition-transport12-parameters-dev (<< 11.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
+Multi-Arch: same
+Description: Gazebo transport Library - Parameters Dev
+ Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
+ efficient message passing system. Asynchronous message publication and
+ subscription is provided along with service calls and discovery.
+ .
+ Gazebo is a set of simple libraries that provide useful
+ functionality to bootstrap robot applications. The included libraries
+ encapsulate all the essentials, such as common math data types, console
+ logging, 3D mesh management, and asynchronous message passing.
+ .
+ The package ships the Gazebo transport parameters development libraries
+
+Package: libgz-transport12-parameters
+Architecture: any
+Section: libs
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Breaks: libignition-transport12-parameters (<< 11.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
+Replaces: libignition-transport12-parameters (<< 11.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
+Multi-Arch: same
+Description: Gazebo Transport Library - Parameters Shared library
+ Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
+ efficient message passing system. Asynchronous message publication and
+ subscription is provided along with service calls and discovery.
+ .
+ Gazebo is a set of simple libraries that provide useful
+ functionality to bootstrap robot applications. The included libraries
+ encapsulate all the essentials, such as common math data types, console
+ logging, 3D mesh management, and asynchronous message passing.
+ .
+ The package ships the Gazebo Transport parameters shared library
+
 Package: libgz-transport12-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-transport12-core-dev (= ${binary:Version}),
          libgz-transport12-log-dev (= ${binary:Version}),
+         libgz-transport12-parameters-dev (= ${binary:Version}),
          ${misc:Depends}
 Breaks: libignition-transport12-dev (<< 11.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
 Replaces: libignition-transport12-dev (<< 11.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
@@ -212,6 +255,22 @@ Description: transitional package
 
 Package: libignition-transport12-log
 Depends: libgz-transport12-log, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-transport12-parameters-dev
+Depends: libgz-transport12-parameters-dev, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-transport12-parameters
+Depends: libgz-transport12-parameters, ${misc:Depends}
 Architecture: all
 Priority: optional
 Section: oldlibs
