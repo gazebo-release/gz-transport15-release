@@ -1,3 +1,9 @@
+gz-transport12 (12.1.0~pre1-2~jammy) jammy; urgency=medium
+
+  * gz-transport12 12.1.0~pre1-2 release
+
+ -- Nate Koenig <nate@openrobotics.org>  Tue, 10 Jan 2023 13:15:24 -0800
+
 gz-transport12 (12.1.0~pre1-1~jammy) jammy; urgency=medium
 
   * gz-transport12 12.1.0~pre1-1 release
