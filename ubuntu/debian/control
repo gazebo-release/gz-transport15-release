@@ -142,8 +142,8 @@ Depends: libgz-cmake3-dev,
          libgz-transport12-core-dev (= ${binary:Version}),
          libgz-transport12-parameters (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-transport12-parameters-dev (<< 11.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
-Replaces: libignition-transport12-parameters-dev (<< 11.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
+Breaks: libignition-transport12-core-dev (<< 12.1.0~pre2)
+Replaces: libignition-transport12-core-dev (<< 12.1.0~pre2)
 Multi-Arch: same
 Description: Gazebo transport Library - Parameters Dev
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
