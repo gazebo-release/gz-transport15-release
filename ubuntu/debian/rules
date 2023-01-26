@@ -33,4 +33,4 @@ override_dh_auto_test:
 	true
 
 override_dh_strip:
-	dh_strip -a --dbg-package=libgz-transport12-dbg
+	dh_strip -a --dbg-package=libgz-transport13-dbg
