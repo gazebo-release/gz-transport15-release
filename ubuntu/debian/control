@@ -42,8 +42,6 @@ Depends: libgz-transport13 (= ${binary:Version}),
          libgz-utils2-dev,
          ${shlibs:Depends},
          ${misc:Depends}
-Breaks: libignition-transport13-core-dev (<< 12.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
-Replaces: libignition-transport13-core-dev (<< 12.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
 Multi-Arch: same
 Description: Gazebo transport Library - Core Dev files
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
@@ -64,8 +62,6 @@ Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Recommends: gz-transport13-cli
-Breaks: libignition-transport13 (<< 12.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
-Replaces: libignition-transport13 (<< 12.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
 Multi-Arch: same
 Description: Gazebo Transport Library - Shared library
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
@@ -105,8 +101,6 @@ Depends: libsqlite3-dev,
          libgz-transport13-core-dev (= ${binary:Version}),
          libgz-transport13-log (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-transport13-log-dev (<< 12.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
-Replaces: libignition-transport13-log-dev (<< 12.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
 Multi-Arch: same
 Description: Gazebo transport Library - Core Dev
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
@@ -125,8 +119,6 @@ Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-transport13-log (<< 12.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
-Replaces: libignition-transport13-log (<< 12.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
 Multi-Arch: same
 Description: Gazebo Transport Library - Log Shared library
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
@@ -147,8 +139,6 @@ Depends: libgz-cmake3-dev,
          libgz-transport13-core-dev (= ${binary:Version}),
          libgz-transport13-parameters (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-transport13-core-dev (<< 12.1.0~pre2)
-Replaces: libignition-transport13-core-dev (<< 12.1.0~pre2)
 Multi-Arch: same
 Description: Gazebo transport Library - Parameters Dev
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
@@ -167,8 +157,6 @@ Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libignition-transport13-parameters (<< 12.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
-Replaces: libignition-transport13-parameters (<< 12.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
 Multi-Arch: same
 Description: Gazebo Transport Library - Parameters Shared library
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
@@ -189,8 +177,6 @@ Depends: libgz-transport13-core-dev (= ${binary:Version}),
          libgz-transport13-log-dev (= ${binary:Version}),
          libgz-transport13-parameters-dev (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libignition-transport13-dev (<< 12.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
-Replaces: libignition-transport13-dev (<< 12.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
 Multi-Arch: same
 Description: Gazebo transport Library - Metapackage
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
@@ -211,8 +197,6 @@ Priority: optional
 Depends:
      libgz-transport13 (= ${binary:Version}),
      ${misc:Depends}
-Breaks: libignition-transport13-dbg (<< 12.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
-Replaces: libignition-transport13-dbg (<< 12.999.999+nightly+git20220630+1r54abb8a6887e9137e6f703e51bbca2956efff773-1)
 Multi-Arch: same
 Description: Gazebo transport Library - Debugging symbols
  Gazebo transport library combines ZeroMQ with Protobufs to create a fast and
