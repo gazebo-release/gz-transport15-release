@@ -1,3 +1,9 @@
+gz-transport13 (13.0.0-1~jammy) jammy; urgency=medium
+
+  * gz-transport13 13.0.0-1 release
+
+ -- Addisu Z. Taddese <addisu@openrobotics.org>  Fri, 29 Sep 2023 14:21:27 -0500
+
 gz-transport13 (13.0.0~pre2-1~jammy) jammy; urgency=medium
 
   * gz-transport13 13.0.0~pre2-1 release
