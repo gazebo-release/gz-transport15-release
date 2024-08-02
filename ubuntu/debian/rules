@@ -28,8 +28,8 @@ override_dh_auto_build:
 	dh_auto_build
 
 override_dh_install:
-	install -d debian/tmp/usr/share/gz/gz-plugin3/
-	install ./obj-*/*.tag.xml debian/tmp/usr/share/gz/gz-plugin3/
+	install -d debian/tmp/usr/share/gz/gz-transport14/
+	install ./obj-*/*.tag.xml debian/tmp/usr/share/gz/gz-transport14/
 	dh_install --
 	# need to remove files present in components
 	$(RM) debian/libgz-transport*-core-dev/usr/include/gz/transport*/gz/transport/log.hh
