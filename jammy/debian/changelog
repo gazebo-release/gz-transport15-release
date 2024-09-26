@@ -1,12 +1,11 @@
+gz-transport14 (14.0.0-1~jammy) jammy; urgency=medium
+
+  * gz-transport14 14.0.0-1 release
+
+ -- Addisu Z. Taddese <addisu@openrobotics.org>  Thu, 26 Sep 2024 17:23:57 -0500
+
 gz-transport14 (14.0.0~pre1-1~jammy) jammy; urgency=medium
 
   * gz-transport14 14.0.0~pre1-1 release
 
  -- Ian Chen <ichen@openrobotics.org>  Tue, 27 Aug 2024 21:51:31 +0000
-
-gz-transport14 (13.999.999-1~jammy) jammy; urgency=medium
-
-  * Stub to be removed after first entry
-
- -- Ian Chen <ichen@openrobotics.org>  Thu, 12 Oct 2023 20:53:45 +0000
-
